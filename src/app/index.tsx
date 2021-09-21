@@ -1,22 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React, { useState } from 'react';
 
-import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import Splash from './screens/splash/index';
+import Login from './screens/login/index';
 
 const App = () => {
-  return (
-    <SafeAreaView>
-      <Text>Hola Mundo 225566</Text>
-    </SafeAreaView>
-  );
+  const [switchView, setSwitchView] = useState('splash');
+
+  const onPressSwitch = (view: string) => {
+    setSwitchView(view);
+  };
+
+  let contentView = <Splash switchViewCustom={onPressSwitch} />;
+
+  if (switchView !== 'splash') {
+    contentView = <Login switchViewCustom={onPressSwitch} />;
+  }
+  return <>{contentView}</>;
 };
 
 export default App;
