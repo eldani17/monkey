@@ -13,8 +13,8 @@ function Splash({ switchViewCustom }: any) {
         resizeMode="cover"
         style={styles.imageBackground}>
         <Image source={logo} />
+        <Button onPress={() => switchViewCustom('login')} title="Ir a Login" />
       </ImageBackground>
-      <Button onPress={() => switchViewCustom('login')} title="Ir a Login" />
     </SafeAreaView>
   );
 }
