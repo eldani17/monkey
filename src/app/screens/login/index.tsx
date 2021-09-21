@@ -6,7 +6,7 @@ import topLogin from '@assets/topLogin.png';
 import styles from './styles';
 
 interface props {
-  switchViewCustom: (view: string) => {};
+  switchViewCustom: (view: string) => void;
 }
 
 function Login({ switchViewCustom }: props) {

@@ -5,7 +5,11 @@ import background from '@assets/background.png';
 
 import styles from './styles';
 
-function Splash({ switchViewCustom }: any) {
+interface props {
+  switchViewCustom: (view: string) => void;
+}
+
+function Splash({ switchViewCustom }: props) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
