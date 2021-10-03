@@ -12,9 +12,9 @@ interface props {
 function Login({ navigation }: props) {
   return (
     <SafeAreaView style={styles.container}>
+      <Button onPress={() => navigation.navigate('Home')} title="Ir a Inicio" />
       <Image source={topLogin} style={styles.imageTopLogin} />
       <Image source={logo} style={styles.imageLogo} />
-      <Button onPress={() => navigation.navigate('Home')} title="Ir a Inicio" />
     </SafeAreaView>
   );
 }
