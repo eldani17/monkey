@@ -1,4 +1,5 @@
 {
   "name": "Monkey",
-  "displayName": "Monkey"
+  "displayName": "Monkey",
+  "orientation": "default"
 }
