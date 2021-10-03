@@ -9,8 +9,10 @@
  */
 
 import React from 'react';
-import App from './src/app';
+//import App from './src/app';
+import MonkeyNavigator from './src/app/navigation/MonkeyNavigation';
 
 export default function index() {
-  return <App />;
+  // return <App />;
+  return <MonkeyNavigator />;
 }
