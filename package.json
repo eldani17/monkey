@@ -10,11 +10,15 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.4",
+    "@react-navigation/native-stack": "^6.2.2",
     "babel-plugin-import-glob": "^2.0.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "react": "17.0.2",
     "react-native": "0.65.1",
-    "react-native-image-overlay": "^0.1.2"
+    "react-native-image-overlay": "^0.1.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

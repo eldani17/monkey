@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container: {
     alignItems: 'center',
     flex: 1,
-    justifyContent: 'center'
+    padding: 0
   },
   imageTopLogin: {
     width: '100%'
