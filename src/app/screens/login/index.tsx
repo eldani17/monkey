@@ -6,15 +6,15 @@ import topLogin from '@assets/topLogin.png';
 import styles from './styles';
 
 interface props {
-  switchViewCustom: (view: string) => void;
+  navigation: any;
 }
 
-function Login({ switchViewCustom }: props) {
+function Login({ navigation }: props) {
   return (
     <SafeAreaView style={styles.container}>
       <Image source={topLogin} style={styles.imageTopLogin} />
       <Image source={logo} style={styles.imageLogo} />
-      <Button onPress={() => switchViewCustom('splash')} title="Ir a Splash" />
+      <Button onPress={() => navigation.navigate('Home')} title="Ir a Inicio" />
     </SafeAreaView>
   );
 }

@@ -10,10 +10,22 @@ const Stack = createNativeStackNavigator();
 
 const MonkeyNavigator = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="Splash">
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Splash" component={Splash} />
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen
+        name="Home"
+        options={{ title: 'Inicio' }}
+        component={Home}
+      />
+      <Stack.Screen
+        name="Login"
+        options={{ title: 'Iniciar Sesión' }}
+        component={Login}
+      />
+      <Stack.Screen
+        name="Splash"
+        options={{ title: 'Espera' }}
+        component={Splash}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 );

@@ -6,10 +6,10 @@ import background from '@assets/background.png';
 import styles from './styles';
 
 interface props {
-  switchViewCustom: (view: string) => void;
+  navigation: any;
 }
 
-function Splash({ switchViewCustom }: props) {
+function Splash({ navigation }: props) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -17,7 +17,10 @@ function Splash({ switchViewCustom }: props) {
         resizeMode="cover"
         style={styles.imageBackground}>
         <Image source={logo} />
-        <Button onPress={() => switchViewCustom('login')} title="Ir a Login" />
+        <Button
+          onPress={() => navigation.navigate('Home')}
+          title="Ir a Inicio"
+        />
       </ImageBackground>
     </SafeAreaView>
   );
